@@ -1,0 +1,21 @@
+\documentclass[12pt,border=10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}
+\usepackage{unicode-math}
+\setmathfont{latinmodern-math.otf}
+\usepackage{xcolor}
+\definecolor{ink}{HTML}{0F172A}
+\begin{document}
+\color{ink}
+\Huge
+\(
+\displaystyle
+f(p)=
+\begin{cases}
+-d(p,\mathcal{S}), & \text{wewnątrz obiektu}\\
+0, & \text{na powierzchni}\\
++d(p,\mathcal{S}), & \text{na zewnątrz obiektu}
+\end{cases}
+\)
+\end{document}

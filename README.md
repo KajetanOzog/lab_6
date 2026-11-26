@@ -38,12 +38,17 @@ $ pip install -r requirements.txt
 
 ## Zadania
 
-**Dwa zadania obowiązkowe**
+**Ćwiczenia na zajęciach**
+
+1. **Czy siatka zauważy mały okrąg?** ([notebook 01, sekcja 3](01_sdf_marching_cubes.ipynb#cwiczenie-maly-okrag))
+2. **Próg gęstości NeRF** ([notebook 02, sekcja 5](02_surface_reconstruction.ipynb#prog-gestosci-nerf))
+
+**Dwa zadania obowiązkowe do domu**
 
 1. **Połącz dwie kule** ([notebook 01](01_sdf_marching_cubes.ipynb))
 2. **Głębokość piksela** ([notebook 02](02_surface_reconstruction.ipynb))
 
-**Zadania dodatkowe**
+**Zadania dodatkowe do domu**
 
 - **Triangulacja mapy głębi** ([notebook 02](02_surface_reconstruction.ipynb))
 - **Punkt na deformowanym trójkącie** ([notebook 03](03_animacja_meshu_i_chmury.ipynb))
@@ -69,8 +74,8 @@ Warto zwrócić uwagę na:<br />
 [12] F. Bernardini, J. Mittleman, H. Rushmeier, C. Silva, G. Taubin (1999). [The Ball-Pivoting Algorithm for Surface Reconstruction](https://kogs-www.informatik.uni-hamburg.de/~tchernia/SR_papers/bernardini99.pdf). IEEE Transactions on Visualization and Computer Graphics, 5(4), s. 349–359. Slajd 19 odsyła do [ilustracji „Basic Operations” w SlideServe](https://image2.slideserve.com/4596010/basic-operations-l.jpg) (dostęp 25.11.2026).<br />
 [13] M. Kazhdan, M. Bolitho, H. Hoppe (2006). [Poisson Surface Reconstruction](https://hhoppe.com/proj/poissonrecon/). Symposium on Geometry Processing. Ilustrację ze slajdu 20 wskazano w [omówieniu w SlideToDoc](https://slidetodoc.com/poisson-surface-reconstruction-m-kazhdan-m-bolitho-h/) (dostęp 25.11.2026).<br />
 [14] U.-J. Kim (2024). [4. 3D Computer Vision](https://uijinee.github.io/posts/3dvision/). UiJin’s Blog. Źródło wskazane przy ilustracji mapy głębi na slajdzie 22 (dostęp 25.11.2026).<br />
-[15] A. Guédon, V. Lepetit (2024). [SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering](https://anttwo.github.io/sugar/). CVPR. Metoda omawiana na slajdzie 37 (dostęp 25.11.2026).<br />
-[16] B. Huang, Z. Yu, A. Chen, A. Geiger, S. Gao (2024). [2D Gaussian Splatting for Geometrically Accurate Radiance Fields](https://arxiv.org/abs/2403.17888). SIGGRAPH. Metoda omawiana na slajdzie 37 (dostęp 25.11.2026).<br />
+[15] A. Guédon, V. Lepetit (2024). [SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering](https://anttwo.github.io/sugar/). CVPR. Metoda omawiana na slajdzie „3DGS, SuGaR i 2DGS na danych DTU” (dostęp 25.11.2026).<br />
+[16] B. Huang, Z. Yu, A. Chen, A. Geiger, S. Gao (2024). [2D Gaussian Splatting for Geometrically Accurate Radiance Fields](https://arxiv.org/abs/2403.17888). SIGGRAPH. Metoda omawiana na slajdzie „3DGS, SuGaR i 2DGS na danych DTU” (dostęp 25.11.2026).<br />
 [17] Open3D. [Pakiety dystrybucyjne wersji 0.20.0](https://pypi.org/project/open3d/0.20.0/#files). PyPI (dostęp 25.11.2026).<br />
 [18] J. Wong (2016). [Ray Marching and Signed Distance Functions](https://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/) (dostęp 25.11.2026).<br />
 [19] D. Bommes. [Geometry Representations](https://slides.cgg.unibe.ch/GP20/03_Geometry_Representations.html#/). Slajdy z wykładu *3D Geometry Processing*, Uniwersytet w Bernie (dostęp 25.11.2026).<br />

@@ -16,7 +16,6 @@ W ostatniej części deformujemy siatkę chorągiewki i przenosimy próbki jej p
 - [scripts/generate_figures/](scripts/generate_figures/) zawiera skrypty przygotowujące wybrane grafiki i animacje oraz skrypt treningu modelu NeRF. Gotowe grafiki są w [images/](images/), a wagi modelu w [data/torus_nerf_weights.npz](data/torus_nerf_weights.npz).
 - [requirements.txt](requirements.txt) określa zależności projektu.
 
-
 ## Konfiguracja środowiska
 
 Wybierz `venv` albo Condę.

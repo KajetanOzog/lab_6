@@ -14,27 +14,40 @@ W ostatniej części deformujemy siatkę chorągiewki i przenosimy próbki jej p
 - [03_animacja_meshu_i_chmury.ipynb](03_animacja_meshu_i_chmury.ipynb) zawiera deformację chorągiewki, animację chmury punktów na jej powierzchni oraz zadanie z interpolacji barycentrycznej.
 - Moduły [marching_squares.py](scripts/utils/marching_squares.py) i [surface_reconstruction.py](scripts/utils/surface_reconstruction.py) udostępniają odpowiednio logikę rekonstrukcji konturu w komórce oraz pomocnicze funkcje kamery, renderowania głębi i wizualizacji 3D.
 - [scripts/generate_figures/](scripts/generate_figures/) zawiera skrypty przygotowujące wybrane grafiki i animacje oraz skrypt treningu modelu NeRF. Gotowe grafiki są w [images/](images/), a wagi modelu w [data/torus_nerf_weights.npz](data/torus_nerf_weights.npz).
-- [requirements.txt](requirements.txt) określa zależności projektu. Konkretne wersje użyte do uruchomienia notebooków podano w [konfiguracji środowiska](#konfiguracja-środowiska).
+- [requirements.txt](requirements.txt) określa zależności projektu.
 
 
 ## Konfiguracja środowiska
 
-Stwórz środowisko za pomocą `venv`:
+Wybierz `venv` albo Condę.
+
+**venv w Linux/macOS**
+
 ```bash
-$ python3.12 -m venv .venv
-```
-lub z użyciem `conda`:
-```bash
-$ conda create -n .venv python=3.12
-$ conda activate .venv
+python3.12 -m venv .venv
+source .venv/bin/activate
 ```
 
-zainstaluj niezbędne biblioteki:
-```bash
-$ source .venv/bin/activate
-$ pip install -r requirements.txt
+**venv w Windows (PowerShell)**
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
 ```
 
+**Conda**
+
+```bash
+conda create -n .venv python=3.12
+conda activate .venv
+```
+
+Po aktywacji wybranego środowiska zainstaluj pakiety i uruchom JupyterLab:
+
+```bash
+python -m pip install -r requirements.txt
+jupyter lab
+```
 
 ## Zadania
 
@@ -69,11 +82,11 @@ Repozytorium zostało stworzone na podstawie:<br />
 [9] M. Pharr, W. Jakob, G. Humphreys. *Physically Based Rendering: From Theory to Implementation*. [Triangle Meshes](https://pbr-book.org/4ed/Shapes/Triangle_Meshes), wyd. 4, oraz [Sampling a Triangle](https://pbr-book.org/3ed-2018/Monte_Carlo_Integration/2D_Sampling_with_Multidimensional_Transformations#SamplingaTriangle), wyd. 3 (dostęp 25.11.2026).<br />
 
 Warto zwrócić uwagę na:<br />
-[10] BorisTheBrave (2018). [Marching Cubes Tutorial](https://www.boristhebrave.com/2018/04/15/marching-cubes-tutorial/) oraz [Marching Cubes 3D Tutorial](https://www.boristhebrave.com/2018/04/15/marching-cubes-3d-tutorial/). Materiały do slajdów 9 i 12 oraz notebooka 01 (dostęp 25.11.2026).<br />
-[11] V. Koutlis (2025). [What is a Point Cloud? Basics, Uses and Visualization](https://rebusfarm.net/blog/what-is-a-point-cloud). RebusFarm. Ilustracja chmury i mesha na slajdzie 16 jest przypisana w artykule do Packt (dostęp 25.11.2026).<br />
-[12] F. Bernardini, J. Mittleman, H. Rushmeier, C. Silva, G. Taubin (1999). [The Ball-Pivoting Algorithm for Surface Reconstruction](https://kogs-www.informatik.uni-hamburg.de/~tchernia/SR_papers/bernardini99.pdf). IEEE Transactions on Visualization and Computer Graphics, 5(4), s. 349–359. Slajd 19 odsyła do [ilustracji „Basic Operations” w SlideServe](https://image2.slideserve.com/4596010/basic-operations-l.jpg) (dostęp 25.11.2026).<br />
-[13] M. Kazhdan, M. Bolitho, H. Hoppe (2006). [Poisson Surface Reconstruction](https://hhoppe.com/proj/poissonrecon/). Symposium on Geometry Processing. Ilustrację ze slajdu 20 wskazano w [omówieniu w SlideToDoc](https://slidetodoc.com/poisson-surface-reconstruction-m-kazhdan-m-bolitho-h/) (dostęp 25.11.2026).<br />
-[14] U.-J. Kim (2024). [4. 3D Computer Vision](https://uijinee.github.io/posts/3dvision/). UiJin’s Blog. Źródło wskazane przy ilustracji mapy głębi na slajdzie 22 (dostęp 25.11.2026).<br />
+[10] BorisTheBrave (2018). [Marching Cubes Tutorial](https://www.boristhebrave.com/2018/04/15/marching-cubes-tutorial/) oraz [Marching Cubes 3D Tutorial](https://www.boristhebrave.com/2018/04/15/marching-cubes-3d-tutorial/). Ilustracje do slajdów „Marching Squares: 16 konfiguracji narożników” i „Marching Cubes: przejście do sześcianów” oraz materiał do notebooka 01 (dostęp 25.11.2026).<br />
+[11] V. Koutlis (2025). [What is a Point Cloud? Basics, Uses and Visualization](https://rebusfarm.net/blog/what-is-a-point-cloud). RebusFarm. Ilustracja na slajdzie „Chmura punktów jako reprezentacja” jest przypisana w artykule do Packt (dostęp 25.11.2026).<br />
+[12] F. Bernardini, J. Mittleman, H. Rushmeier, C. Silva, G. Taubin (1999). [The Ball-Pivoting Algorithm for Surface Reconstruction](https://kogs-www.informatik.uni-hamburg.de/~tchernia/SR_papers/bernardini99.pdf). IEEE Transactions on Visualization and Computer Graphics, 5(4), s. 349–359. Slajd „Ball Pivoting Algorithm” odsyła do [ilustracji „Basic Operations” w SlideServe](https://image2.slideserve.com/4596010/basic-operations-l.jpg) (dostęp 25.11.2026).<br />
+[13] M. Kazhdan, M. Bolitho, H. Hoppe (2006). [Poisson Surface Reconstruction](https://hhoppe.com/proj/poissonrecon/). Symposium on Geometry Processing. Ilustrację ze slajdu „Poisson Surface Reconstruction” wskazano w [omówieniu w SlideToDoc](https://slidetodoc.com/poisson-surface-reconstruction-m-kazhdan-m-bolitho-h/) (dostęp 25.11.2026).<br />
+[14] U.-J. Kim (2024). [4. 3D Computer Vision](https://uijinee.github.io/posts/3dvision/). UiJin’s Blog. Źródło wskazane przy ilustracji na slajdzie „Mapa głębi (Depth Map) - przypomnienie” (dostęp 25.11.2026).<br />
 [15] A. Guédon, V. Lepetit (2024). [SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering](https://anttwo.github.io/sugar/). CVPR. Metoda omawiana na slajdzie „3DGS, SuGaR i 2DGS na danych DTU” (dostęp 25.11.2026).<br />
 [16] B. Huang, Z. Yu, A. Chen, A. Geiger, S. Gao (2024). [2D Gaussian Splatting for Geometrically Accurate Radiance Fields](https://arxiv.org/abs/2403.17888). SIGGRAPH. Metoda omawiana na slajdzie „3DGS, SuGaR i 2DGS na danych DTU” (dostęp 25.11.2026).<br />
 [17] Open3D. [Pakiety dystrybucyjne wersji 0.20.0](https://pypi.org/project/open3d/0.20.0/#files). PyPI (dostęp 25.11.2026).<br />
@@ -83,3 +96,5 @@ Warto zwrócić uwagę na:<br />
 [21] R. Schmidt (2017). [Merging Meshes with Signed Distance Fields](https://www.gradientspace.com/tutorials/2017/11/21/signed-distance-fields-tutorial). gradientspace (dostęp 25.11.2026).<br />
 [22] scikit-image. [Marching Cubes](https://scikit-image.org/docs/stable/auto_examples/edges/plot_marching_cubes.html). Przykład ekstrakcji i wizualizacji izopowierzchni (dostęp 25.11.2026).<br />
 [23] S. Lague. [Coding Adventure: Marching Cubes](https://www.youtube.com/watch?v=M3iI2l0ltbE). YouTube (dostęp 25.11.2026).<br />
+
+[24] W. Zhang, Y.-S. Liu, Z. Han (2024). [Neural Signed Distance Function Inference through Splatting 3D Gaussians Pulled on Zero-Level Set](https://papers.neurips.cc/paper_files/paper/2024/file/b8b34328ae68ccc931265bcd21ae5f16-Paper-Conference.pdf). NeurIPS. Rysunek 3 zawiera porównanie na danych DTU przywołane w prezentacji i notebooku 02 (dostęp 26.11.2026).<br />

@@ -70,6 +70,15 @@ jupyter lab
 
 Daty w nawiasach oznaczają weryfikację źródeł podczas opracowywania README.
 
+Powiązanie źródeł z częścią NeRF i animacją:
+
+- NeRF i ekstrakcja izopowierzchni: [3], [5].
+- Głębia ze splatów i fuzja TSDF: [4], [6], [8], [16] (równanie 18 w dodatku B).
+- Porównanie DTU: [15], [16], [24] (rysunek 3).
+- Meshe i współrzędne barycentryczne: [9], rozdział 6.5; próbkowanie trójkąta: 6.5.4 w wydaniu 4.
+
+Wykresy, schematy i animacje w tej części przygotowano na potrzeby laboratorium. Wyniki NeRF pochodzą z sekcji 5 notebooka 02, porównania głębi i meshów — z sekcji 6, a animacje — z notebooka 03. Na slajdzie „Porównanie map głębi” pokazano widok 0 przy progu opacity 0,72.
+
 Repozytorium zostało stworzone na podstawie:<br />
 [1] W. E. Lorensen, H. E. Cline (1987). [Marching Cubes: A High Resolution 3D Surface Construction Algorithm](https://www.cs.columbia.edu/~allen/PHOTOPAPERS/marching.cubes.pdf). SIGGRAPH, s. 163–169. DOI `10.1145/37402.37422` (dostęp 25.11.2026).<br />
 [2] G. M. Nielson, B. Hamann (1991). [The Asymptotic Decider: Resolving the Ambiguity in Marching Cubes](https://web.cs.ucdavis.edu/~hamann/pubs91.shtml). IEEE Visualization, s. 83–91. DOI `10.1109/VISUAL.1991.175782` (dostęp do wykazu autora 25.11.2026).<br />
